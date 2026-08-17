@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chauhan Bhatta | Quality Bricks</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <span>CHAUHAN</span>
+            <small>DCP • BHATTA</small>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Bricks</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="order-btn" onclick="orderNow()">
+            Order Now
+        </button>
+    </header>
+
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="tagline">TRUST • QUALITY • STRENGTH</p>
+
+            <h1>
+                Strong Bricks.<br>
+                <span>Strong Foundations.</span>
+            </h1>
+
+            <p class="hero-text">
+                Welcome to <strong>Chauhan Bhatta</strong> —
+                quality bricks manufactured with strength,
+                durability and reliability in mind.
+            </p>
+
+            <div class="hero-buttons">
+                <button onclick="viewProducts()" class="primary-btn">
+                    Explore Bricks
+                </button>
+
+                <button onclick="orderNow()" class="secondary-btn">
+                    Get a Quote
+                </button>
+            </div>
+
+        </div>
+
+        <div class="hero-badge">
+            <strong>CHAUHAN</strong>
+            <span>DCP</span>
+            <small>QUALITY BRICKS</small>
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS -->
+    <section id="products" class="products">
+
+        <div class="section-title">
+            <p>OUR PRODUCTS</p>
+            <h2>Built With <span>Quality</span></h2>
+        </div>
+
+        <div class="product-grid">
+
+            <div class="product-card">
+                <div class="brick-icon">🧱</div>
+
+                <h3>CHAUHAN DCP</h3>
+
+                <p>
+                    Premium quality bricks suitable
+                    for strong residential and commercial
+                    construction.
+                </p>
+
+                <button onclick="orderProduct('CHAUHAN DCP')">
+                    Enquire Now
+                </button>
+            </div>
+
+
+            <div class="product-card">
+                <div class="brick-icon">🧱</div>
+
+                <h3>Construction Bricks</h3>
+
+                <p>
+                    Reliable bricks designed for
+                    everyday construction requirements.
+                </p>
+
+                <button onclick="orderProduct('Construction Bricks')">
+                    Enquire Now
+                </button>
+            </div>
+
+
+            <div class="product-card">
+                <div class="brick-icon">🧱</div>
+
+                <h3>Bulk Orders</h3>
+
+                <p>
+                    Large quantity brick supply for
+                    contractors and construction projects.
+                </p>
+
+                <button onclick="orderProduct('Bulk Order')">
+                    Get Quote
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+
+        <div>
+            <p class="section-label">ABOUT US</p>
+
+            <h2>
+                The Name Behind<br>
+                <span>Strong Foundations.</span>
+            </h2>
+
+            <p>
+                Chauhan Bhatta is focused on providing
+                dependable bricks for construction.
+                Our identity is represented by the
+                <strong>CHAUHAN DCP</strong> marking.
+            </p>
+
+            <button onclick="orderNow()" class="primary-btn">
+                Contact Us
+            </button>
+        </div>
+
+        <div class="about-box">
+            <strong>CHAUHAN</strong>
+            <span>DCP</span>
+            <small>BRICKS</small>
+        </div>
+
+    </section>
+
+<!-- ORDER FORM -->
+<section id="order" class="order-section">
+
+    <div class="section-title">
+        <p>BRICK ORDER</p>
+        <h2>Order <span>CHAUHAN DCP</span></h2>
+    </div>
+
+    <div class="order-form-box">
+
+        <form id="brickOrderForm">
+
+            <div class="form-group">
+                <label>Customer Name</label>
+                <input
+                    type="text"
+                    id="customerName"
+                    placeholder="Apna naam likhein"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label>Mobile Number</label>
+                <input
+                    type="tel"
+                    id="customerPhone"
+                    placeholder="10 digit mobile number"
+                    maxlength="10"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label>Product</label>
+
+                <select id="productName">
+                    <option value="CHAUHAN DCP">CHAUHAN DCP</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Quantity (Eent)</label>
+
+                <input
+                    type="number"
+                    id="quantity"
+                    placeholder="Example: 2000"
+                    min="1"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label>Delivery Location</label>
+
+                <textarea
+                    id="deliveryLocation"
+                    placeholder="Village, Post, Police Station, Block, District"
+                    required
+                ></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Additional Message</label>
+
+                <textarea
+                    id="additionalMessage"
+                    placeholder="Koi extra information ho to likhein"
+                ></textarea>
+            </div>
+
+            <button type="submit" class="order-submit-btn">
+                📲 Send Order on WhatsApp
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+
+        <div class="section-title">
+            <p>CONTACT</p>
+            <h2>Let's Build <span>Together.</span></h2>
+        </div>
+
+        <div class="contact-box">
+
+            <h3>Chauhan Bhatta</h3>
+
+            <p>
+                For brick orders, bulk requirements
+                and price enquiries, contact us.
+            </p>
+
+            <button onclick="orderNow()" class="primary-btn">
+                WhatsApp / Order
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            CHAUHAN <span>DCP</span>
+        </div>
+
+        <p>
+            © 2026 Chauhan Bhatta. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
